@@ -23,7 +23,7 @@ public class AopTest {
 
     @Test
     public void context(){
-        System.out.println("推送dev分支");
+        System.out.println("推送dev分");
         service.insert(new HashMap<>(),"1");
     }
 
