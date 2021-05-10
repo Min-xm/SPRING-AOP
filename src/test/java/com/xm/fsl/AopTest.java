@@ -23,6 +23,7 @@ public class AopTest {
 
     @Test
     public void context(){
+        System.out.println("");
         service.insert(new HashMap<>(),"1");
     }
 
