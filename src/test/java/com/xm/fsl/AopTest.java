@@ -23,11 +23,7 @@ public class AopTest {
 
     @Test
     public void context(){
-<<<<<<< HEAD
-        System.out.println("推送dev！");
-=======
         System.out.println("我先修改dev");
->>>>>>> dev
         service.insert(new HashMap<>(),"1");
     }
 
