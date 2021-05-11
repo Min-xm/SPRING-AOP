@@ -20,13 +20,13 @@ public class TestInterceptor implements HandlerInterceptor {
         request.setAttribute("startTime", System.currentTimeMillis());
         log.info("controller object is {}", handlerMethod.getBean().getClass().getName());
         log.info("controller method is {}", handlerMethod.getMethod());
-
         // 需要返回true，否则请求不会被控制器处理
         return true;
     }
 
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView){
+        log.info( request.getParameter("Test"));
         log.info("请求处理之后进行调用，但是在视图被渲染之前（Controller方法调用之后），如果异常发生，则该方法不会被调用");
     }
 
