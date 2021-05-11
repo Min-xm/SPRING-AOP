@@ -1,9 +1,7 @@
 package com.xm.fsl;
 
 
-import com.xm.fsl.entity.Student;
 import com.xm.fsl.service.ILogService;
-import com.xm.fsl.service.impl.TestService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,6 +23,8 @@ public class AopTest {
     public void context(){
         System.out.println("我先修改dev");
         service.insert(new HashMap<>(),"1");
+
+
     }
 
 }
