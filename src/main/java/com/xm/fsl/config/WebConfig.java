@@ -3,6 +3,7 @@ package com.xm.fsl.config;
 
 import com.xm.fsl.filter.TestFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -39,7 +40,13 @@ public class WebConfig implements WebMvcConfigurer {
         urls.add("/*");
 //        bean.addUrlPatterns("","","","",...);
         bean.setUrlPatterns(urls);
+
         return bean;
+    }
+
+    public ServletListenerRegistrationBean RegisterListener1(){
+
+        return null;
     }
 
     @Override
